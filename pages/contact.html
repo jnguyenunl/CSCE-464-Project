@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>My Personal Website</title>
     <link rel="stylesheet" type="text/css" href="../css/general.css" />
+    <script src="../rotate.js"></script>
   </head>
   <body>
     <div class="header">
@@ -92,7 +93,25 @@
                   <td><label for="email">E-mail Address:</label></td>
                   <td>
                     <input id="email" type="text" name="email" size="40" />
+                    @
+                    <select id="service" onchange="startRotation()">
+                      <option>&nbsp;</option>
+                      <option value="0">gmail</option>
+                      <option value="1">yahoo</option>
+                      <option value="2">outlook</option>
+                    </select>
+                    .com
                   </td>
+                </tr>
+                <tr>
+                  <div class="image" id="image">
+                    <img
+                      id="placeholder"
+                      src="images/mail.jpg"
+                      width="256"
+                      height="256"
+                    />
+                  </div>
                 </tr>
               </table>
             </fieldset>

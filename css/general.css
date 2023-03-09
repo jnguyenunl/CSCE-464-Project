@@ -143,3 +143,8 @@ body {
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
+
+.image {
+  display: flex;
+  justify-content: center;
+}
