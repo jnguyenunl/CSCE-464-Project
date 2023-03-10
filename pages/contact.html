@@ -35,14 +35,40 @@
       </div>
     </div>
     <div class="side-bar">
-      <div class="navigation"><a href="../home.html">Home</a></div>
-      <div class="navigation"><a href="../pages/life.html">Ealry life</a></div>
-      <div class="navigation">
-        <a href="../pages/about.html">More about me</a>
-      </div>
-      <div class="navigation">
-        <a href="../pages/contact.html">Contact me</a>
-      </div>
+      <ul>
+        <li class="dropdown">
+          <a href="../home.html" class="dropbtn">Home</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="../pages/life.html" class="dropbtn">Early Life</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="../pages/about.html" class="dropbtn">More about me</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="../pages/contact.html" class="dropbtn">Contact me</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+      </ul>
     </div>
     <table class="contact-content">
       <tr>
@@ -93,25 +119,7 @@
                   <td><label for="email">E-mail Address:</label></td>
                   <td>
                     <input id="email" type="text" name="email" size="40" />
-                    @
-                    <select id="service" onchange="startRotation()">
-                      <option>&nbsp;</option>
-                      <option value="0">gmail</option>
-                      <option value="1">yahoo</option>
-                      <option value="2">outlook</option>
-                    </select>
-                    .com
                   </td>
-                </tr>
-                <tr>
-                  <div class="image" id="image">
-                    <img
-                      id="placeholder"
-                      src="images/mail.jpg"
-                      width="256"
-                      height="256"
-                    />
-                  </div>
                 </tr>
               </table>
             </fieldset>
