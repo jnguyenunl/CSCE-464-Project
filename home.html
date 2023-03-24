@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>My Personal Website</title>
+    <title>My Portfolio Website - Home</title>
     <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <script src="../dark.js"></script>
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="header">
       <div class="left-section">
         <img
           src="https://ucomm.unl.edu/images/brand-book/Our-marks/nebraska-lockup-nleft-bigright.jpg"
@@ -31,6 +32,7 @@
           alt="University of Nebraska-Lincoln"
           class="facebook"
         />
+        <button onclick="darkMode()">Dark Mode</button>
       </div>
     </div>
     <div class="side-bar">
@@ -38,13 +40,21 @@
         <li class="dropdown">
           <a href="home.html" class="dropbtn">Home</a>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a class="link" href="#">Link 1</a>
+            <a class="link" href="#">Link 2</a>
+            <a class="link" href="#">Link 3</a>
           </div>
         </li>
         <li class="dropdown">
-          <a href="pages/life.html" class="dropbtn">Early Life</a>
+          <a href="pages/life.html" class="dropbtn">About Me</a>
+          <div class="dropdown-content">
+            <a class="link" href="#">Link 1</a>
+            <a class="link" href="#">Link 2</a>
+            <a class="link" href="#">Link 3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="pages/about.html" class="dropbtn">Skills</a>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
@@ -52,19 +62,11 @@
           </div>
         </li>
         <li class="dropdown">
-          <a href="pages/about.html" class="dropbtn">More about me</a>
+          <a href="pages/contact.html" class="dropbtn">Contact Me</a>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="pages/contact.html" class="dropbtn">Contact me</a>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a class="link" href="#">Link 1</a>
+            <a class="link" href="#">Link 2</a>
+            <a class="link" href="#">Link 3</a>
           </div>
         </li>
       </ul>
@@ -73,15 +75,9 @@
       <table>
         <tr>
           <td colspan="3">
-            <h3>Welcome to personal website!</h3>
-            <p>Hi! I am <em>James Nguyen</em> and I am a senior.</p>
-            <br />
-            <p>My major is Computer Science with a minor in Mathmatics</p>
-            <br />
-            <p>
-              I chose CS for my major because I was always into computers at a
-              young age.
-            </p>
+            <h3>Welcome to my portfolio website!</h3>
+            <p>Hi! I am <em>James Nguyen</em></p>
+            <p>Computer Science with a minor in Mathmatics</p>
           </td>
           <td colspan="2">
             <img
