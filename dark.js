@@ -3,4 +3,5 @@ function darkMode(){
     body.classList.toggle("dark-mode");
     var header = document.getElementById("header");
     header.classList.toggle("dark-mode-header");
+    return true;
 }
